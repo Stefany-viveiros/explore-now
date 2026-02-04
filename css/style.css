@@ -15,7 +15,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 15px 40px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +45,7 @@ body {
 }
 
 .nav a {
-  margin: 0 15px;
+  margin: 0 20px;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
@@ -73,8 +73,8 @@ body {
 .home {
   height: 100vh;
   background: linear-gradient(
-      rgba(10, 61, 98, 0.7),
-      rgba(10, 61, 98, 0.7)
+      rgba(9, 65, 105, 0.7),
+      rgba(4, 20, 32, 0.7)
     ),
     url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
       center/cover no-repeat;
@@ -114,7 +114,7 @@ body {
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 50s, box-shadow 10s;
 }
 
 .btn-home:hover {
