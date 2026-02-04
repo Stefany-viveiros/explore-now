@@ -29,6 +29,15 @@ body {
   background-color: rgba(10, 61, 98, 1);
   padding: 10px 40px;
 }
+ 
+.logo-img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f39c12;
+}
+
 
 .logo {
   font-size: 1.5rem;
