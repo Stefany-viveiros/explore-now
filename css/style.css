@@ -15,21 +15,25 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 15px 20px;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(10, 61, 98, 0.9);
   color: #fff;
   z-index: 1000;
-  transition: all 0.3s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
 }
-
 .header.scrolled {
   background-color: rgba(10, 61, 98, 1);
   padding: 10px 40px;
 }
- 
+
+/* Header escondido */
+.header.hide {
+  transform: translateY(-100%);
+}
+
 .logo-img {
   height: 160px;
   width: 160px;
@@ -120,7 +124,7 @@ body {
 }
 
 .btn-home:hover {
-  transform: scale(1.05); /* aumenta 5% quando passar o mouse, não esquecer */
+  transform: scale(1.05); /* aumenta 5% quando passar o mouse */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* sombra suave */
 }
 
@@ -129,7 +133,7 @@ body {
   background-color: rgba(10, 61, 98, 0.9); 
   color: #fff;
   text-align: center;
-  padding: 30px ;
+  padding: 50px ;
   margin-top: 50px;
 }
 
