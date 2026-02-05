@@ -94,6 +94,18 @@ body {
   font-size: 1.05rem;
 }
 
+.diferenciais {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.diferenciais li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+
 /* FOOTER */
 .footer {
   background-color: rgba(10, 61, 98, 0.9); 
