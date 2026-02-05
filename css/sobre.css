@@ -94,15 +94,36 @@ body {
   font-size: 1.05rem;
 }
 
-.diferenciais {
-  margin-top: 15px;
-  margin-left: 20px;
+.cards-diferenciais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
-.diferenciais li {
-  margin-bottom: 12px;
-  font-size: 1.05rem;
-  color: #333;
+.card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+  color: #0a3d62;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 
