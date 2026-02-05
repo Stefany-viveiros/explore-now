@@ -111,20 +111,19 @@ body {
 
 .btn-home {
   background-color: #f39c12;
-  color:rgba(10, 61, 98, 1);
   border: none;
   padding: 15px 30px;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
-  transition: transform 50s, box-shadow 10s;
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-home:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05); /* aumenta 5% quando passar o mouse, não esquecer */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* sombra suave */
 }
+
 
 .footer {
   background-color: rgba(10, 61, 98, 0.9); 
