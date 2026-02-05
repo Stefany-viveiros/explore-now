@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(10, 61, 98, 0.9);
+  color: #fff;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+
+.header.scrolled {
+  background-color: rgba(10, 61, 98, 1);
+  padding: 10px 40px;
+}
+
+.logo-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f39c12;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #f39c12;
+}
+
+.btn-header {
+  background-color: #f39c12;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.btn-header:hover {
+  transform: translateY(-2px);
+}
+
+/* SEÇÃO SOBRE */
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px 50px 20px; /* topo maior para header fixo */
+  background-color: #f4f6f8;
+  gap: 50px;
+}
+
+.sobre-content {
+  max-width: 500px;
+}
+
+.sobre-content h1 {
+  font-size: 2.5rem;
+  color: #0a3d62;
+  margin-bottom: 20px;
+}
+
+.sobre-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Imagem da seção Sobre */
+.sobre-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgba(10, 61, 98, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #f39c12;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
