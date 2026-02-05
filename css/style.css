@@ -57,6 +57,7 @@ body {
 
 .btn-header {
   background-color: #f39c12;
+  color:rgb(16, 45, 124);
   border: none;
   padding: 10px 18px;
   border-radius: 20px;
@@ -66,7 +67,7 @@ body {
 }
 
 .btn-header:hover {
-  transform: translateY(-2px);
+  transform: translateY(2px);
 }
 
 
@@ -100,6 +101,7 @@ body {
 .home h1 {
   font-size: 3rem;
   margin-bottom: 15px;
+
 }
 
 .home p {
@@ -109,12 +111,14 @@ body {
 
 .btn-home {
   background-color: #f39c12;
+  color:rgba(10, 61, 98, 1);
   border: none;
   padding: 15px 30px;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
   transition: transform 50s, box-shadow 10s;
+  
 }
 
 .btn-home:hover {
@@ -123,10 +127,10 @@ body {
 }
 
 .footer {
-  background-color: rgba(10, 61, 98, 0.9);
+  background-color: rgba(10, 61, 98, 0.9); 
   color: #fff;
   text-align: center;
-  padding: 30px ;
+  padding: 50px ;
   margin-top: 50px;
 }
 
