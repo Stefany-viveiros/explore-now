@@ -1,0 +1,226 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.logo-img {
+  height: 45px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0a3d62;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav a.active::after,
+.nav a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.btn-header {
+  background: #f39c12;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero-destinos {
+  padding-top: 140px;
+  padding-bottom: 60px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 61, 98, 0.08),
+    rgba(243, 156, 18, 0.15)
+  );
+}
+
+.hero-destinos h1 {
+  font-size: 2.6rem;
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+
+.hero-destinos p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ===== GRID DESTINOS ===== */
+.destinos-container {
+  max-width: 1400px;
+  margin: 60px auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.destino-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.destino-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== CARROSSEL ===== */
+.carousel {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* ===== INFO ===== */
+.destino-info {
+  padding: 20px;
+}
+
+.destino-info h2 {
+  color: #0a3d62;
+  margin-bottom: 8px;
+}
+
+.preco {
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.destino-info ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.destino-info li {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.btn-destino {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #f39c12, #f1a12b);
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0a3d62;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #0a3d62;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer .socials a {
+  color: #f39c12;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1200px) {
+  .destinos-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .destinos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .destinos-container {
+    grid-template-columns: 1fr;
+  }
+}
