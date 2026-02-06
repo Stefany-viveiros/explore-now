@@ -144,3 +144,15 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
+
+/* ===== ANIMAÇÃO AO SCROLL ===== */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+
+.animate.active {
+  opacity: 1;
+  transform: translateY(0);
+}
