@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +25,11 @@ body {
   transition: transform 0.4s ease, background-color 0.3s ease;
 }
 .header.scrolled {
-  background-color: rgba(10, 61, 98, 1);
+  background-color: rgb(79, 139, 182);
   padding: 10px 40px;
 }
 
-/* Header escondido */
+
 .header.hide {
   transform: translateY(-100%);
 }
