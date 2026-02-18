@@ -1,4 +1,5 @@
-ExploreNow
+ExploreNow 
+Acesse o site online: https://explorenowprojeto.netlify.app
 
 ExploreNow é um projeto de website para uma agência de viagens fictícia, desenvolvido com foco em desenvolvimento front-end, boas práticas de código e organização de projeto.
 
