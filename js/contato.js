@@ -1,6 +1,3 @@
-console.log("JS do contato carregado com sucesso");
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formContato");
   const mensagemSucesso = document.getElementById("mensagemSucesso");
@@ -9,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const email = document.getElementById("email");
   const telefone = document.getElementById("telefone");
   const mensagem = document.getElementById("mensagem");
+
+  if (!form || !mensagemSucesso || !nome || !email || !telefone || !mensagem) return;
 
   function mostrarErro(input) {
     const group = input.parentElement;

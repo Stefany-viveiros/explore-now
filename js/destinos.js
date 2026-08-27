@@ -5,6 +5,8 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
   let index = 0;
 
+  if (!images.length || !prevBtn || !nextBtn) return;
+
   function showImage(i) {
     images.forEach((img) => img.classList.remove("active"));
     images[i].classList.add("active");

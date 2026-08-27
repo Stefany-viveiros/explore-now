@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 // seleciona os elementos que queremos animar..
 const elementsToAnimate = document.querySelectorAll('.sobre-content, .cards-diferenciais .card');
 
