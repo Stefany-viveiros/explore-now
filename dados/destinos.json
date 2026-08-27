@@ -1,0 +1,90 @@
+[
+  {
+    "id": "paris",
+    "nome": "Paris",
+    "categoria": "romance",
+    "tipo": "Internacional",
+    "preco": 6500,
+    "promocao": true,
+    "descricao": "Uma viagem elegante por museus, cafés, arquitetura clássica e experiências românticas pela cidade luz.",
+    "imagens": ["img/paris1.webp", "img/paris2.webp", "img/paris3.webp", "img/paris4.webp", "img/paris5.webp", "img/paris6.webp"],
+    "itens": ["Passagem aérea", "Hotel 4 estrelas", "Café da manhã", "City tour"]
+  },
+  {
+    "id": "roma",
+    "nome": "Roma",
+    "categoria": "cultura",
+    "tipo": "Internacional",
+    "preco": 5800,
+    "promocao": false,
+    "descricao": "Roteiro histórico com gastronomia italiana, monumentos clássicos e passeios guiados pelos pontos mais famosos.",
+    "imagens": ["img/roma1.webp", "img/roma2.webp", "img/roma3.webp", "img/roma4.webp", "img/roma5.webp", "img/roma6.webp"],
+    "itens": ["Passagem aérea", "Hotel 3 estrelas", "Café da manhã", "Passeios históricos"]
+  },
+  {
+    "id": "londres",
+    "nome": "Londres",
+    "categoria": "urbano",
+    "tipo": "Internacional",
+    "preco": 6900,
+    "promocao": false,
+    "descricao": "Pacote urbano com transporte, pontos turísticos, cultura britânica e localização prática para explorar a cidade.",
+    "imagens": ["img/londres1.webp", "img/londres2.webp", "img/londres3.webp", "img/londres4.webp", "img/londres5.webp", "img/londres6.webp"],
+    "itens": ["Passagem aérea", "Hotel 4 estrelas", "Transporte urbano", "Pontos turísticos"]
+  },
+  {
+    "id": "maldivas",
+    "nome": "Maldivas",
+    "categoria": "praia",
+    "tipo": "Internacional",
+    "preco": 9200,
+    "promocao": true,
+    "descricao": "Resort all inclusive, águas cristalinas e passeios aquáticos para uma experiência completa de descanso.",
+    "imagens": ["img/maldivas1.webp", "img/maldivas2.webp", "img/maldivas3.webp", "img/maldivas4.webp", "img/maldivas5.webp", "img/maldivas6.webp"],
+    "itens": ["Passagem aérea", "Resort all inclusive", "Bebidas liberadas", "Passeios aquáticos"]
+  },
+  {
+    "id": "nova-york",
+    "nome": "Nova York",
+    "categoria": "urbano",
+    "tipo": "Internacional",
+    "preco": 7400,
+    "promocao": false,
+    "descricao": "Viagem intensa para quem quer compras, city tour, vida urbana e hospedagem em região central.",
+    "imagens": ["img/nova2.webp", "img/nova3.webp", "img/nova21.webp", "img/nova4.webp", "img/nova5.webp", "img/nova6.webp"],
+    "itens": ["Passagem aérea", "Hotel central", "City tour", "Compras"]
+  },
+  {
+    "id": "toquio",
+    "nome": "Tóquio",
+    "categoria": "cultura",
+    "tipo": "Internacional",
+    "preco": 8300,
+    "promocao": true,
+    "descricao": "Experiência cultural com tecnologia, gastronomia japonesa, transporte urbano e passeios por bairros icônicos.",
+    "imagens": ["img/toquio1.webp", "img/toquio2.webp", "img/toquio3.webp", "img/toquio4.webp", "img/toquio5.webp", "img/toquio6.jpg"],
+    "itens": ["Passagem aérea", "Hotel 4 estrelas", "Transporte urbano", "Experiência cultural"]
+  },
+  {
+    "id": "rio-de-janeiro",
+    "nome": "Rio de Janeiro",
+    "categoria": "nacional",
+    "tipo": "Nacional",
+    "preco": 2300,
+    "promocao": false,
+    "descricao": "Pacote nacional com praia, passeios turísticos e hospedagem próxima aos principais cartões-postais.",
+    "imagens": ["img/rio1.webp", "img/rio2.webp", "img/rio3.webp", "img/rio4.webp", "img/rio5.webp", "img/rio6.webp"],
+    "itens": ["Passagem aérea", "Hotel próximo à praia", "Passeios turísticos", "Pão de Açúcar"]
+  },
+  {
+    "id": "porto-de-galinhas",
+    "nome": "Porto de Galinhas",
+    "categoria": "nacional",
+    "tipo": "Nacional",
+    "preco": 2800,
+    "promocao": true,
+    "descricao": "Destino nacional com resort, piscinas naturais, passeios guiados e clima perfeito para relaxar.",
+    "imagens": ["img/porto1.webp", "img/porto2.webp", "img/porto3.webp", "img/porto4.webp", "img/porto5.webp", "img/porto6.webp"],
+    "itens": ["Passagem aérea", "Resort", "Piscinas naturais", "Passeios guiados"]
+  }
+]
