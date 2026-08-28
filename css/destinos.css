@@ -71,6 +71,11 @@ body {
   cursor: pointer;
 }
 
+.btn-header.active {
+  background: #0a3d62;
+  color: #fff;
+}
+
 /* ===== HERO ===== */
 .hero-destinos {
   padding-top: 140px;
@@ -92,6 +97,47 @@ body {
 .hero-destinos p {
   font-size: 1.1rem;
   color: #555;
+}
+
+/* ===== FILTROS ===== */
+.filtros-destinos {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 18px;
+}
+
+.filtro-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filtro-campo label {
+  color: #0a3d62;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.filtro-campo input,
+.filtro-campo select {
+  width: 100%;
+  border: 2px solid #dcdde1;
+  border-radius: 14px;
+  background: #fff;
+  color: #333;
+  font-size: 1rem;
+  padding: 13px 15px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filtro-campo input:focus,
+.filtro-campo select:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.18);
 }
 
 /* ===== GRID DESTINOS ===== */
@@ -151,6 +197,8 @@ body {
 .carousel-btn:focus-visible,
 .btn-header:focus-visible,
 .btn-destino:focus-visible,
+.btn-modal:focus-visible,
+.modal-close:focus-visible,
 .nav a:focus-visible {
   outline: 3px solid #f39c12;
   outline-offset: 3px;
@@ -172,6 +220,30 @@ body {
 .destino-info h2 {
   color: #0a3d62;
   margin-bottom: 8px;
+}
+
+.destino-topo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.badge-promocao {
+  background: rgba(39, 174, 96, 0.12);
+  color: #1f8f4d;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 9px;
+  white-space: nowrap;
+}
+
+.destino-tipo {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  text-transform: capitalize;
 }
 
 .preco {
@@ -199,6 +271,120 @@ body {
   font-weight: 600;
   cursor: pointer;
   color: #0a3d62;
+}
+
+.estado-vazio,
+.erro-carregamento {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 30px;
+  color: #555;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===== MODAL ===== */
+.modal-aberto {
+  overflow: hidden;
+}
+
+.modal-pacote[hidden] {
+  display: none;
+}
+
+.modal-pacote {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 61, 98, 0.65);
+}
+
+.modal-content {
+  position: relative;
+  width: min(920px, 100%);
+  max-height: 90vh;
+  overflow: auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  object-fit: cover;
+}
+
+.modal-info {
+  padding: 34px;
+}
+
+.modal-tag {
+  display: inline-block;
+  color: #0a3d62;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.modal-info h2 {
+  color: #0a3d62;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.modal-preco {
+  color: #f39c12;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.modal-info p {
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.modal-info ul {
+  margin: 0 0 24px 18px;
+  color: #333;
+}
+
+.btn-modal {
+  display: inline-block;
+  background: linear-gradient(135deg, #f39c12, #f1a12b);
+  color: #0a3d62;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 24px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #0a3d62;
+  font-size: 1.6rem;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== FOOTER ===== */
@@ -231,8 +417,25 @@ body {
 }
 
 @media (max-width: 900px) {
+  .filtros-destinos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filtro-campo:first-child {
+    grid-column: 1 / -1;
+  }
+
   .destinos-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-content {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content img {
+    min-height: 260px;
+    max-height: 320px;
   }
 }
 
@@ -270,5 +473,26 @@ body {
     grid-template-columns: 1fr;
     margin: 40px auto;
     padding: 0 18px;
+  }
+
+  .filtros-destinos {
+    grid-template-columns: 1fr;
+    padding: 0 18px;
+  }
+
+  .filtro-campo:first-child {
+    grid-column: auto;
+  }
+
+  .modal-pacote {
+    padding: 14px;
+  }
+
+  .modal-info {
+    padding: 26px 22px;
+  }
+
+  .modal-info h2 {
+    font-size: 1.7rem;
   }
 }
